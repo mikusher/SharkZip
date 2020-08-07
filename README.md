@@ -3,10 +3,10 @@ Make the folder zip, already with application of deletions.
 
 
 #
-Recomendamos ter o Java, mais atualizado possivel sempre. 
-Essa aplicação esta sendo compilado na versão (52 = Java 8), levando em conta a populariedade dessa versão.
+We recommend having Java as up-to-date as possible ever. 
+This application is being compiled in version (52 = Java 8), taking into account the popularity of this version.
 
-Para usar:
+To use:
 1. downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v1.jar) 
 
 2. Runs the jar file normally
