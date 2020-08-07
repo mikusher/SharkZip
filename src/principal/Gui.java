@@ -59,8 +59,8 @@ public class Gui extends javax.swing.JFrame {
         jCBApplyDefault = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("GoZip");
-        setName("GoZip"); // NOI18N
+        setTitle("SharkZip");
+        setName("SharkZip"); // NOI18N
 
         jLabel1.setText("Folder Dir:");
 
