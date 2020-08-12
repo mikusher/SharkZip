@@ -7,7 +7,7 @@ We recommend having Java as up-to-date as possible ever.
 This application is being compiled in version (52 = Java 8), taking into account the popularity of this version.
 
 To use:
-1. downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v1.jar) 
+1. downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v2.jar) 
 
 2. Runs the jar file normally
 ![image](https://user-images.githubusercontent.com/3151021/89665479-af0ec780-d8d0-11ea-9019-ee2b59fb03df.png)
