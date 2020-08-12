@@ -12,7 +12,7 @@ This application is being compiled in version (52 = Java 8), taking into account
 - *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
 - *add folder exclusion by semicolon ( ; ) -> "uses the folder name without wildcard character";*
 
-💬 [**v1**](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
+💬 [**v1**](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v1.jar) 
 - *delete files from folders;*
 - *create the **Zip** of a folder;*
 
