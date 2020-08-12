@@ -24,9 +24,9 @@ import org.apache.tools.ant.DirectoryScanner;
 
 public class ZipCompress {
 
-    static int count;
+    static int countFiles;
 
-    public static int compressRx(String dirPath, List<String> exclusions, boolean applyDefault) {
+    public static int compressRx(String dirPath, List<String> exclusions, boolean applyDefault, List<String> directoriesExclusions) {
         final Path sourceDir = Paths.get(dirPath);
         String zipFileName = dirPath.concat(".zip");
 
@@ -39,18 +39,32 @@ public class ZipCompress {
         List<File> filesToRemove = Arrays.asList(fRm);
 
         try {
-            count = 0;
+            countFiles = 0;
 
             final ZipOutputStream outputStream = new ZipOutputStream(new FileOutputStream(zipFileName));
 
             Files.walkFileTree(sourceDir, new SimpleFileVisitor<Path>() {
+                @Override
+                public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+                    String dirName = dir.getFileName().toString();
+                    if (!directoriesExclusions.isEmpty()) {
+                        for (String excl : directoriesExclusions) {
+                            if (excl != null && !excl.equals("") && dirName.equals(excl)) {
+                                System.out.println("Dir Ignored: " + dir.toString());
+                                return FileVisitResult.SKIP_SUBTREE;
+                            }
+                        }
+                        outputStream.closeEntry();
+                    }
+                    return FileVisitResult.CONTINUE;
+                }
 
                 @Override
                 public FileVisitResult visitFile(Path file, BasicFileAttributes attributes) {
 
                     if (filesToRemove.contains(file.toFile())) {
-                        count++;
-                        System.out.println("File removed: " + file.toString());
+                        countFiles++;
+                        System.out.println("File Ignored: " + file.toString());
                     } else {
                         try {
                             Path targetFile = sourceDir.relativize(file);
@@ -63,17 +77,16 @@ public class ZipCompress {
                         }
                         return FileVisitResult.CONTINUE;
                     }
-
-
                     return FileVisitResult.CONTINUE;
                 }
+
             });
             outputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return count;
+        return countFiles;
     }
 
     private static File[] filesToExcluding(final String sourceDir, List<String> exlcusions) {

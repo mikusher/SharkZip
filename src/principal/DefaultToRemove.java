@@ -25,14 +25,18 @@ public class DefaultToRemove {
 
         List<String> standardList = new ArrayList<>();
         //others
-        standardList.add("*.cbl");
-        standardList.add("*.ec");
-        standardList.add("*Test.*");
         standardList.add("**/*~");
         standardList.add("**/#*#");
         standardList.add("**/.#*");
         standardList.add("**/%*%");
         standardList.add("**/._*");
+        standardList.add("*.cbl");
+        standardList.add("*.ec");
+        standardList.add("*.component");
+        standardList.add("*.project");
+        standardList.add("*.MF");
+        standardList.add("PSQL.dll");
+        standardList.add("*Test.*");
         //fonts
         standardList.add("*.eot");
         standardList.add("*.ttf");
