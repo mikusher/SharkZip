@@ -6,8 +6,19 @@ Make the folder zip, already with application of deletions.
 We recommend having Java as up-to-date as possible ever. 
 This application is being compiled in version (52 = Java 8), taking into account the popularity of this version.
 
+### Release version:
+💬 **v2**
+- *fixe count total files excluded;*
+- *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
+- *add folder exclusion by semicolon ( ; ) -> "uses the folder name without wildcard character";*
+
+💬 **v1**
+- *delete files from folders;*
+- *create the **Zip** of a folder;*
+
+
 To use:
-1. downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
+1. Downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
 
 2. Runs the jar file normally
 - Right click on the Jar file
@@ -43,8 +54,8 @@ You can use expressions as an example (*.json or *.min.*) to remove all files th
 
 💬 Zip Dir:
 - zips the desired folder by applying the exclusions.
-
 ```
+
 ## Final Execution
 ![image](https://user-images.githubusercontent.com/3151021/89667613-5b05e200-d8d4-11ea-89cb-3e47e072932d.png)
 
