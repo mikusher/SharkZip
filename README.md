@@ -7,18 +7,18 @@ We recommend having Java as up-to-date as possible ever.
 This application is being compiled in version (52 = Java 8), taking into account the popularity of this version.
 
 ### Release version:
-💬 **v2**
+💬 [**v2**](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
 - *fixe count total files excluded;*
 - *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
 - *add folder exclusion by semicolon ( ; ) -> "uses the folder name without wildcard character";*
 
-💬 **v1**
+💬 [**v1**](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
 - *delete files from folders;*
 - *create the **Zip** of a folder;*
 
 
 ### How to use:
-1. Downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
+1. Downloads the last version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v1/SharkZip_v1.jar) 
 
 2. Runs the jar file normally
 - Right click on the Jar file
