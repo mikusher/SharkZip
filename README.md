@@ -11,6 +11,8 @@ This application is being compiled in version (52 = Java 8), taking into account
 - *fixe count total files excluded;*
 - *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
 - *add folder exclusion by semicolon ( ; ) -> "uses the folder name without wildcard character";*
+<img src="https://user-images.githubusercontent.com/3151021/90055862-ed8ff200-dcd5-11ea-8a78-5aa591d022ca.png" width="450" height="120">
+
 
 💬 [**v1**](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v1.jar) 
 - *delete files from folders;*
@@ -25,13 +27,13 @@ This application is being compiled in version (52 = Java 8), taking into account
 - goes on Open With:
 - Java(TM) Platform SE Binary
 
-![image](https://user-images.githubusercontent.com/3151021/89665056-f8124c00-d8cf-11ea-9520-f5beb12866ed.png)
+<img src="https://user-images.githubusercontent.com/3151021/89665056-f8124c00-d8cf-11ea-9520-f5beb12866ed.png" width="450" height="120">
 
 #
 ## Another option
 -> Executes the command, on your terminal:
 $ java -jar SharkZip_vXX.jar
-![image](https://user-images.githubusercontent.com/3151021/89664977-db761400-d8cf-11ea-82c5-f72c61323801.png)
+<img src="https://user-images.githubusercontent.com/3151021/89664977-db761400-d8cf-11ea-82c5-f72c61323801.png" width="450" height="120">
 
 
 ### Adds the files that you want to remove.
@@ -57,7 +59,7 @@ You can use expressions as an example (*.json or *.min.*) to remove all files th
 ```
 
 ## Final Execution
-![image](https://user-images.githubusercontent.com/3151021/89667613-5b05e200-d8d4-11ea-89cb-3e47e072932d.png)
+<img src="https://user-images.githubusercontent.com/3151021/89667613-5b05e200-d8d4-11ea-89cb-3e47e072932d.png" width="450" height="120">
 
 ### Default Exclusion List:
 //others
