@@ -19,7 +19,7 @@ To use:
 #
 ## Another option
 -> Executes the command, on your terminal:
-$ java -jar SharkZip_v1.jar
+$ java -jar SharkZip_vXX.jar
 ![image](https://user-images.githubusercontent.com/3151021/89664977-db761400-d8cf-11ea-82c5-f72c61323801.png)
 
 
