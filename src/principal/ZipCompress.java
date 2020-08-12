@@ -24,7 +24,7 @@ import org.apache.tools.ant.DirectoryScanner;
 
 public class ZipCompress {
 
-    static int count = 0;
+    static int count;
 
     public static int compressRx(String dirPath, List<String> exclusions, boolean applyDefault) {
         final Path sourceDir = Paths.get(dirPath);
@@ -39,6 +39,7 @@ public class ZipCompress {
         List<File> filesToRemove = Arrays.asList(fRm);
 
         try {
+            count = 0;
 
             final ZipOutputStream outputStream = new ZipOutputStream(new FileOutputStream(zipFileName));
 
