@@ -61,6 +61,7 @@ public class DefaultToRemove {
         standardList.add("*.md");
         standardList.add("*.csproj");
         standardList.add("*.cache");
+        standardList.add("*.ini");
         // js/css minifile
         standardList.add("*.min.js");
         standardList.add("*.min.js.map");
