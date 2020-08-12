@@ -20,7 +20,7 @@ This application is being compiled in version (52 = Java 8), taking into account
 
 
 ### How to use:
-1. Downloads the last version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v1/SharkZip_v1.jar) 
+1. Downloads the last version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
 
 2. Runs the jar file normally
 - Right click on the Jar file
