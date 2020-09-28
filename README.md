@@ -8,7 +8,7 @@ This application is being compiled in version (52 = Java 8), taking into account
 
 ### Release version:
 💬 [**v2**](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
-- *fixe count total files excluded;*
+- *fix count total files excluded;*
 - *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
 - *add folder exclusion by semicolon ( ; ) -> "uses the folder name without wildcard character";*
 <img src="https://user-images.githubusercontent.com/3151021/90055862-ed8ff200-dcd5-11ea-8a78-5aa591d022ca.png" width="450" height="120">
