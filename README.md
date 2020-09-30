@@ -7,6 +7,31 @@ We recommend having Java as up-to-date as possible ever.
 This application is being compiled in version (52 = Java 8), taking into account the popularity of this version.
 
 ### Release version:
+💬 [**v2**](https://github.com/mikusher/SharkZip/releases/download/v3/SharkZip_v3.jar) 
+- *Add more files to exclusion list*
+- *Add check box, folder exclusion*
+- Standard Folder Excluded:
+    - .*
+    - debug
+    - *test
+    - *spec
+    - dist
+    - swagger
+    - docs
+    - *tests
+    - lib
+    - node_modules
+    - plugins
+    - build
+    - deploy
+    - dist
+    - unit
+    - logs
+    - coverage
+    - cache
+    - .git
+
+
 💬 [**v2**](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
 - *fix count total files excluded;*
 - *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
