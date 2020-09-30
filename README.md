@@ -65,7 +65,6 @@ $ java -jar SharkZip_vXX.jar
 ### Adds the files that you want to remove.
 It can be done using expressions and each element must be separated by semicolon ( ; )
 
-
 😄
 ``` x
 Data entry in the application:
