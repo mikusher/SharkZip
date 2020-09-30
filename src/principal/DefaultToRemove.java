@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author LuisT
+ * @author Luis Tavares
  */
 public class DefaultToRemove {
 
@@ -49,6 +49,19 @@ public class DefaultToRemove {
         standardList.add("**/.svn/**");
         standardList.add("*.gitignore");
         standardList.add("*.dockerignore");
+        // Other
+        standardList.add("*.csslintrc");
+        standardList.add("*.editorconfig");
+        standardList.add("*.gitattributes");
+        standardList.add("*.eslintignore");
+        standardList.add("*.prettierignore");
+        standardList.add("*.stylelintignore");
+        standardList.add("*.dist");
+        standardList.add("*.example");
+        standardList.add("*.lock");
+        standardList.add("*.properties");
+        standardList.add("*.theme");
+        standardList.add("*.twig");
         // Mac
         standardList.add("**/.DS_Store");
         //exec fils and compile
@@ -114,6 +127,51 @@ public class DefaultToRemove {
 
     }
 
-    ;
 
+    /**
+     * @param exclusions
+     * @return
+     */
+    public static List<String> mergeToFolderDir(List<String> directoryToExcl) {
+
+        directoryToExcl.removeAll(Arrays.asList("", null));
+
+        List<String> standardListDirectory = new ArrayList<>();
+        //foders
+        standardListDirectory.add(".*");
+        standardListDirectory.add("debug");
+        standardListDirectory.add("*test");
+        standardListDirectory.add("*tests");
+        standardListDirectory.add("*spec");
+        standardListDirectory.add("dist");
+        standardListDirectory.add("swagger");
+        standardListDirectory.add("docs");
+        standardListDirectory.add("lib");
+        standardListDirectory.add("node_modules");
+        standardListDirectory.add("plugins");
+        standardListDirectory.add("build");
+        standardListDirectory.add("deploy");
+        standardListDirectory.add("plugins");
+        standardListDirectory.add("build");
+        standardListDirectory.add("deploy");
+        standardListDirectory.add("unit");
+        standardListDirectory.add("logs");
+        standardListDirectory.add("coverage");
+        standardListDirectory.add("cache");
+        standardListDirectory.add(".git");
+
+
+        return new ArrayList<String>() {
+            /**
+             *
+             */
+            private static final long serialVersionUID = 1L;
+
+            {
+                addAll(directoryToExcl);
+                addAll(standardListDirectory);
+            }
+        };
+
+    }
 }

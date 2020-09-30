@@ -6,7 +6,7 @@
 package principal;
 
 /**
- * @author LuisT
+ * @author Luis Tavares
  */
 
 import java.io.File;
@@ -26,14 +26,16 @@ public class ZipCompress {
 
     static int countFiles;
 
-    public static int compressRx(String dirPath, List<String> exclusions, boolean applyDefault, List<String> directoriesExclusions) {
+    public static int compressRx(String dirPath, List<String> exclusions, boolean applyDefault, boolean userDefaultFolder, List<String> directoriesExclusions) {
         final Path sourceDir = Paths.get(dirPath);
         String zipFileName = dirPath.concat(".zip");
 
 
         List<String> finalExclusionList = (applyDefault) ? DefaultToRemove.mergeToDefaultList(exclusions) : exclusions;
+        List<String> finalDirectoriesExclusions = (userDefaultFolder) ? DefaultToRemove.mergeToFolderDir(directoriesExclusions) : directoriesExclusions;
 
         System.out.println("Exclusion Applied:\n" + finalExclusionList.toString() + "\n");
+        System.out.println("Folder to Ignore:\n" + finalDirectoriesExclusions.toString() + "\n");
 
         File[] fRm = filesToExcluding(sourceDir.toString(), finalExclusionList);
         List<File> filesToRemove = Arrays.asList(fRm);
@@ -47,8 +49,8 @@ public class ZipCompress {
                 @Override
                 public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
                     String dirName = dir.getFileName().toString();
-                    if (!directoriesExclusions.isEmpty()) {
-                        for (String excl : directoriesExclusions) {
+                    if (!finalDirectoriesExclusions.isEmpty()) {
+                        for (String excl : finalDirectoriesExclusions) {
                             if (excl != null && !excl.equals("") && dirName.equals(excl)) {
                                 System.out.println("Dir Ignored: " + dir.toString());
                                 return FileVisitResult.SKIP_SUBTREE;
