@@ -6,18 +6,34 @@ Make the folder zip, already with application of deletions.
 We recommend having Java as up-to-date as possible ever. 
 This application is being compiled in version (52 = Java 8), taking into account the popularity of this version.
 
-To use:
-1. downloads the current version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v1.jar) 
+### Release version:
+💬 [**v2**](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
+- *fix count total files excluded;*
+- *add new exclusion file (.ini, .cbl, Test., PSQL.dll, .MF, .project, .component, .ec, .cbl);*
+- *add folder exclusion by semicolon ( ; ) -> "uses the folder name without wildcard character";*
+<img src="https://user-images.githubusercontent.com/3151021/90055862-ed8ff200-dcd5-11ea-8a78-5aa591d022ca.png" width="450" height="120">
+
+
+💬 [**v1**](https://github.com/mikusher/SharkZip/releases/download/v01/SharkZip_v1.jar) 
+- *delete files from folders;*
+- *create the **Zip** of a folder;*
+
+
+### How to use:
+1. Downloads the last version [SharkZip](https://github.com/mikusher/SharkZip/releases/download/v2/SharkZip_v2.jar) 
 
 2. Runs the jar file normally
-![image](https://user-images.githubusercontent.com/3151021/89665479-af0ec780-d8d0-11ea-9019-ee2b59fb03df.png)
-![image](https://user-images.githubusercontent.com/3151021/89665056-f8124c00-d8cf-11ea-9520-f5beb12866ed.png)
+- Right click on the Jar file
+- goes on Open With:
+- Java(TM) Platform SE Binary
+
+<img src="https://user-images.githubusercontent.com/3151021/89665056-f8124c00-d8cf-11ea-9520-f5beb12866ed.png" width="450" height="120">
 
 #
 ## Another option
 -> Executes the command, on your terminal:
-$ java -jar SharkZip_v1.jar
-![image](https://user-images.githubusercontent.com/3151021/89664977-db761400-d8cf-11ea-82c5-f72c61323801.png)
+$ java -jar SharkZip_vXX.jar
+<img src="https://user-images.githubusercontent.com/3151021/89664977-db761400-d8cf-11ea-82c5-f72c61323801.png" width="450" height="120">
 
 
 ### Adds the files that you want to remove.
@@ -40,87 +56,92 @@ You can use expressions as an example (*.json or *.min.*) to remove all files th
 
 💬 Zip Dir:
 - zips the desired folder by applying the exclusions.
-
 ```
+
 ## Final Execution
-![image](https://user-images.githubusercontent.com/3151021/89667613-5b05e200-d8d4-11ea-89cb-3e47e072932d.png)
+<img src="https://user-images.githubusercontent.com/3151021/89667613-5b05e200-d8d4-11ea-89cb-3e47e072932d.png" width="450" height="120">
 
 ### Default Exclusion List:
-// Others
-- *.cbl 
-- *.ec 
-- *Test.* 
-- **/*~ 
-- **/#*# 
-- **/.#* 
-- **/%*% 
-- **/._* 
+//others
+- **/*~
+- **/#*#
+- **/.#*
+- **/%*%
+- **/._*
+- *.cbl
+- *.ec
+- *.component
+- *.project
+- *.MF
+- PSQL.dll
+- *Test.*
 
-// Fonts
-- *.eot 
-- *.ttf 
-- *.woff 
-- *.woff2 
+//fonts
+- *.eot
+- *.ttf
+- *.woff
+- *.woff2
 
-// Visual SourceSafe
-- **/vssver.scc 
+//Visual SourceSafe
+- **/vssver.scc
 
-// Subversion
-- **/.svn 
-- **/.svn/** 
-- *.gitignore 
-- *.dockerignore 
+//Subversion
+- **/.svn
+- **/.svn/**
+- *.gitignore
+- *.dockerignore
 
-// Mac
-- **/.DS_Store 
+//Mac
+- **/.DS_Store
 
-// Exec fils and compile
-- *.exe 
-- *.msi 
-- *.cmd 
-- *.dll 
-- *.bat 
-- *.sln 
-- *.md 
-- *.csproj 
-- *.cache 
+//exec fils and compile
+- *.exe
+- *.msi
+- *.cmd
+- *.dll
+- *.bat
+- *.sln
+- *.md
+- *.csproj
+- *.cache
+- *.ini
 
-// Js/Css minifile
-- *.min.js 
-- *.min.js.map 
-- *jquery.js 
-- *.bootstrap.js 
-- *jquery.min.map 
-- *.css 
-- *.min.css 
-- *.min.css.map 
+// js/css minifile
+- *.min.js
+- *.min.js.map
+- *jquery.js
+- *.bootstrap.js
+- *jquery.min.map
+- *.css
+- *.min.css
+- *.min.css.map
 
-//Files
-- *.jpeg 
-- *.png 
-- *.bmp 
-- *.ico 
-- *.svg 
-- *.mp3 
-- *.mp4 
-- *.webm 
-- *.avi 
-- *.zip 
-- *.rar 
-- *.7z 
-- *.pdf 
-- *.iso 
-- *.jar 
-- *.apk 
-- *.yml 
+//files
+- *.jpeg
+- *.png
+- *.bmp
+- *.ico
+- *.svg
+- *.mp3
+- *.mp4
+- *.webm
+- *.avi
+- *.zip
+- *.rar
+- *.7z
+- *.pdf
+- *.iso
+- *.jar
+- *.apk
+- *.yml
 
-//Documentation
-- *.docx 
-- *.doc 
-- *.xlsx 
-- *.csv 
+//documentation
+- *.docx
+- *.doc
+- *.xlsx
+- *.csv
 
-//Database files
-- *.db 
-- *.sqlite 
-- *.dylib 
+//database file
+- *.db
+- *.sqlite
+- *.dylib
